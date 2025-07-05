@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conceitos do Vue</title>
-        <!-- Instalando o Vue via CDN. -->
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-        <!-- Script Inicial. -->
-        <script src="src/app.js" defer></script>
-    </head>
-    <body>
-        <div id="app">
-            <form id="app-form">
-                <!-- O Data Binding (v-model) associado ao input abaixo tem seu valor atualizado em tempo real. -->
-                <input type="text" v-model="input_name" placeholder="Digite seu nome...">
-                <input type="submit" value="Enviar" v-on:click="submitForm">
-            </form>
-            <h3>Name: {{ name }}</h3>
-            <!-- Exibição do valor do Data Binding em tempo real. -->
-            <h3>Data Binding: {{ input_name }}</h3>
-        </div>
-    </body>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
