@@ -1,8 +1,18 @@
 const app = {
-    setup() {
+    data() {
         return {
-            framework: "Vue",
-            language: "JavaScript"
+            name: "",
+            input_name: "" // Data Binding.
+        }
+    },
+
+    methods: {
+        submitForm(e) {
+            e.preventDefault();
+
+            console.log("Envio do formulário cancelado.");
+
+            this.name = this.input_name;
         }
     }
 }

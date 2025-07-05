@@ -11,7 +11,14 @@
     </head>
     <body>
         <div id="app">
-            <h1>O {{ framework }} é um framework que utiliza a linguagem de programação {{ language }}.</h1>
+            <form id="app-form">
+                <!-- O Data Binding (v-model) associado ao input abaixo tem seu valor atualizado em tempo real. -->
+                <input type="text" v-model="input_name" placeholder="Digite seu nome...">
+                <input type="submit" value="Enviar" v-on:click="submitForm">
+            </form>
+            <h3>Name: {{ name }}</h3>
+            <!-- Exibição do valor do Data Binding em tempo real. -->
+            <h3>Data Binding: {{ input_name }}</h3>
         </div>
     </body>
 </html>
