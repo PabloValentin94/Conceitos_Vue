@@ -1,19 +1,26 @@
 <template>
   <div>
-    <FirstComponent/>
+    <Test/>
     <LifeCycle/>
+    <Person/>
+    <LifeCycle/>
+    <Forms/>
   </div>
 </template>
 
 <script>
-  import FirstComponent from "./components/FirstComponent.vue"
+  import Test from "./components/Test.vue"
   import LifeCycle from "./components/LifeCycle.vue"
+  import Person from "./components/Person.vue"
+  import Forms from "./components/Forms.vue"
 
   export default {
     name: "App",
     components: {
-      FirstComponent,
-      LifeCycle
+      Test,
+      LifeCycle,
+      Person,
+      Forms
     }
   }
 </script>

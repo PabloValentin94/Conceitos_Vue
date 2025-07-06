@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>I have {{ age }} years old.</h1>
+    <h3>{{ status }}</h3>
   </div>
 </template>
 
@@ -10,19 +10,17 @@
 
     data() {
       return {
-        age: 0
+        status: ""
       }
     },
 
-    created() { // Primeiro LifeCycle Hook executado pelo Vue.
-      setTimeout(() => {
-        this.age = 10;
-      }, 1500);
+    created() { // Primeiro LifeCycle Hook executado pelo Vue nesse contexto.
+      this.status = "Carregando...";
     },
 
     mounted() { // LifeCycle Hook executado após o "created()".
       setTimeout(() => {
-        this.age = 19;
+        this.status = "Carregado.";
       }, 3000);
     }
   }
