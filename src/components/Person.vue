@@ -1,25 +1,23 @@
 <template>
   <div>
-    <h1>{{ firstName }}  {{ lastName }}.</h1>
+    <Photo/>
+    <Info/>
     <Skills/>
   </div>
 </template>
 
 <script>
-  import Skills from "./Skills.vue"
+  import Photo from "./person/Photo.vue"
+  import Info from "./person/Info.vue"
+  import Skills from "./person/Skills.vue"
 
   export default {
     name: "Person",
 
     components: {
+      Photo,
+      Info,
       Skills
-    },
-
-    data() {
-      return {
-        firstName: "Pablo",
-        lastName: "Valentin"
-      }
     }
   }
 </script>
