@@ -15,13 +15,23 @@
       }
     },
 
+    methods: {
+      trackStats() {
+        console.log("Um lifecycle hook foi executado.");
+      }
+    },
+
     created() { // Primeiro LifeCycle Hook executado pelo Vue nesse contexto.
       this.stats = "Carregando...";
+
+      this.trackStats();
     },
 
     mounted() { // LifeCycle Hook executado após o "created()".
       setTimeout(() => {
         this.stats = "Carregado.";
+
+        this.trackStats();
       }, 5000);
     }
   }

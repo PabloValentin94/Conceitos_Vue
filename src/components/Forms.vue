@@ -5,7 +5,7 @@
       <TextInput/>
       <TextInput/>
       <TextInput/>
-      <SubmitInput v-on:click="submitForm"/>
+      <SubmitInput @click="submitForm"/>
     </form>
   </div>
 </template>
