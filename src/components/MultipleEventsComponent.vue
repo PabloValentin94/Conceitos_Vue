@@ -1,6 +1,8 @@
 <template>
-  <button type="button" @click="firstEvent(firstResult), secondEvent(secondResult), thirdEvent(thirdResult), allEventsCompleted()">Acionar múltiplos eventos</button>
-  <p>{{ eventsResult }}</p>
+  <div>
+    <button type="button" @click="firstEvent(firstResult), secondEvent(secondResult), thirdEvent(thirdResult), allEventsCompleted()">Acionar múltiplos eventos</button>
+    <p>{{ eventsResult }}</p>
+  </div>
 </template>
 
 <script>
