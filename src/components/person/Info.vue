@@ -40,7 +40,7 @@
         if (this.emailVisibilityOption === "Mostrar") {
           this.emailVisibilityOption = "Ocultar";
         } else {
-          this.emailVisibilityOption = "Mostrar";
+          this.emailVisibilityOption = "Desocultar";
         }
       }
     }
