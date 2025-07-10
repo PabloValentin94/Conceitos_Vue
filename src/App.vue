@@ -2,6 +2,7 @@
   <div>
     <TestComponent/>
     <LifeCycleComponent/>
+    <MultipleEventsComponent/>
     <HeaderComponent/>
     <PersonComponent/>
     <LifeCycleComponent/>
@@ -12,6 +13,7 @@
 <script>
   import TestComponent from "./components/TestComponent.vue"
   import LifeCycleComponent from "./components/LifeCycleComponent.vue"
+  import MultipleEventsComponent from "./components/MultipleEventsComponent.vue"
   import HeaderComponent from "./components/HeaderComponent.vue"
   import PersonComponent from "./components/PersonComponent.vue"
   import FormsComponent from "./components/FormsComponent.vue"
@@ -22,6 +24,7 @@
     components: {
       TestComponent,
       LifeCycleComponent,
+      MultipleEventsComponent,
       HeaderComponent,
       PersonComponent,
       FormsComponent
