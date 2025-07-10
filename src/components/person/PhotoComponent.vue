@@ -5,7 +5,7 @@
 
 <script>
   export default {
-    name: "Photo",
+    name: "PhotoComponent",
 
     data() {
       return {

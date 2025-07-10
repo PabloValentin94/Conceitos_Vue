@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Hello, Vue!</h1>
+    <input type="submit" value="Enviar">
   </div>
 </template>
 
 <script>
   export default {
-    name: "Test"
+    name: "SubmitInputComponent"
   }
 </script>

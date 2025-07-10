@@ -4,21 +4,21 @@
     <form @submit="submitForm($event)">
       <input type="text" v-model="name" autocomplete="off">
       <input type="text" v-model="email" autocomplete="off">
-      <SubmitInput/>
+      <SubmitInputComponent/>
     </form>
   </div>
 </template>
 
 <script>
-  // import TextInput from "./forms/TextInput.vue"
-  import SubmitInput from "./forms/SubmitInput.vue"
+  // import TextInputComponent from "./forms/TextInputComponent.vue"
+  import SubmitInputComponent from "./forms/SubmitInputComponent.vue"
 
   export default {
-    name: "Forms",
+    name: "FormsComponent",
 
     components: {
-      // TextInput,
-      SubmitInput
+      // TextInputComponent,
+      SubmitInputComponent
     },
 
     data() {

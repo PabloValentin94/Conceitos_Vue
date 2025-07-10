@@ -1,30 +1,30 @@
 <template>
   <div>
-    <Test/>
-    <LifeCycle/>
-    <Header/>
-    <Person/>
-    <LifeCycle/>
-    <Forms/>
+    <TestComponent/>
+    <LifeCycleComponent/>
+    <HeaderComponent/>
+    <PersonComponent/>
+    <LifeCycleComponent/>
+    <FormsComponent/>
   </div>
 </template>
 
 <script>
-  import Test from "./components/Test.vue"
-  import LifeCycle from "./components/LifeCycle.vue"
-  import Header from "./components/Header.vue"
-  import Person from "./components/Person.vue"
-  import Forms from "./components/Forms.vue"
+  import TestComponent from "./components/TestComponent.vue"
+  import LifeCycleComponent from "./components/LifeCycleComponent.vue"
+  import HeaderComponent from "./components/HeaderComponent.vue"
+  import PersonComponent from "./components/PersonComponent.vue"
+  import FormsComponent from "./components/FormsComponent.vue"
 
   export default {
     name: "App",
 
     components: {
-      Test,
-      LifeCycle,
-      Header,
-      Person,
-      Forms
+      TestComponent,
+      LifeCycleComponent,
+      HeaderComponent,
+      PersonComponent,
+      FormsComponent
     }
   }
 </script>

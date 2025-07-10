@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Photo/>
+    <PhotoComponent/>
     <h1>{{ firstName }}  {{ lastName }}.</h1>
     <!-- A diretiva "v-if" exibe o conteúdo se/enquanto a condição foi verdadeira. O elemento só passa a existir se atender a condição. -->
     <h2 v-if="isWorking">Empregado.</h2>
@@ -13,13 +13,13 @@
 </template>
 
 <script>
-  import Photo from "./Photo.vue"
+  import PhotoComponent from "./PhotoComponent.vue"
 
   export default {
-    name: "Info",
+    name: "InfoComponent",
 
     components: {
-      Photo
+      PhotoComponent
     },
 
     data() {

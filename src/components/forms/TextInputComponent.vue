@@ -6,6 +6,6 @@
 
 <script>
   export default {
-    name: "TextInput"
+    name: "TextInputComponent"
   }
 </script>
