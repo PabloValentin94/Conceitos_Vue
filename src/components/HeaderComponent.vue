@@ -3,12 +3,15 @@
     <li><a href="#">Portfólio</a></li>
     <li><a href="#">Habilidades</a></li>
     <li><a href="#">Contato</a></li>
+    <li v-show="isAuthenticated"><a href="#">Perfil</a></li>
   </ul>
 </template>
 
 <script>
   export default {
-    name: "HeaderComponent"
+    name: "HeaderComponent",
+
+    props: ["isAuthenticated"] // Definindo as props como um array.
   }
 </script>
 

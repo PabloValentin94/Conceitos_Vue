@@ -3,7 +3,7 @@
     <TestComponent/>
     <LifeCycleComponent/>
     <MultipleEventsComponent/>
-    <HeaderComponent/>
+    <HeaderComponent :isAuthenticated="isAuthenticated"/>
     <PersonComponent/>
     <LifeCycleComponent/>
     <FormsComponent/>
@@ -28,6 +28,12 @@
       HeaderComponent,
       PersonComponent,
       FormsComponent
+    },
+
+    data() {
+      return {
+        isAuthenticated: true
+      }
     }
   }
 </script>
